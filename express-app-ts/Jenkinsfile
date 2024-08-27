@@ -1,0 +1,3 @@
+node('pipeline') {
+    // some block
+}
