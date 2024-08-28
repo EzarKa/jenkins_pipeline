@@ -7,11 +7,11 @@ pipeline {
                 git url: 'https://github.com/EzarKa/jenkins_pipeline.git', branch: 'main'
             }
         }
-    }
 
-    stage('Install Dependencies') {
-        steps {
-            sh 'npm install'
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm install'
+            }
         }
     }
 
