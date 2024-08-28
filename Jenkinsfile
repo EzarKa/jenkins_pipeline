@@ -1,5 +1,11 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'node:14'
+            label 'node'
+            args '-v /root/.npm:/root/.npm' 
+        }
+    }
 
     stages {
         stage('Checkout') {
