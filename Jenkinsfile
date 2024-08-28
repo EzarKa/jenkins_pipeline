@@ -7,6 +7,7 @@ pipeline {
                 git url: 'https://github.com/EzarKa/jenkins_pipeline.git', branch: 'main'
             }
         }
+    }
 
     post {
         success {
