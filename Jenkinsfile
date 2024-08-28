@@ -9,6 +9,12 @@ pipeline {
         }
     }
 
+    stage('Install Dependencies') {
+        steps {
+            sh 'npm install'
+        }
+    }
+
     post {
         success {
             echo 'Pipeline terminé avec succès.'
