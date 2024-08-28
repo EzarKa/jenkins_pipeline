@@ -19,6 +19,7 @@ pipeline {
                 sh 'mvn test'
             }
         }
+    }
 
     post {
         success {
