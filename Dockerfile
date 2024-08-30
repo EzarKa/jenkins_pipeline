@@ -12,4 +12,4 @@ RUN groupadd docker && usermod -aG docker jenkins
 RUN curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
 ENV DOCKER_HOST=unix:///var/run/docker.sock
 
-USER jenkins
+USER root
