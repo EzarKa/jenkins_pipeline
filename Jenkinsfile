@@ -15,10 +15,7 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh '''
-                    docker pull node:14
-                    docker run --rm -v $PWD:/app -w /app node:14 npm install
-                '''
+                sh 'npm install'
             }
         }
         
